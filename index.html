@@ -1,0 +1,273 @@
+<!--Battle Helper-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pok&eacute;mon Battle Helper</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	  	<link rel="stylesheet" href="styles.css">
+	  	<link href="lib/jasmine.css" type="text/css" rel="stylesheet">
+	  	<link href="lib/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	  	<script src="lib/jquery-1.10.2.js"></script>
+	  	<script src="lib/jquery.simulate.js"></script>
+	  	<script src="lib/jasmine.js"></script>
+	  	<script src="lib/jasmine-jsreporter.js"></script>
+	  	<script src="lib/jasmine-html.js"></script>
+	  	<script src="lib/jasmine-jquery.js"></script>
+
+	  	<link href="src/dragdealer.css" type="text/css" rel="stylesheet">
+	  	<script src="src/dragdealer.js"></script>
+
+	  	<script src="spec/helpers.js"></script>
+	  	<script src="spec/matchers.js"></script>
+	  	<script src="spec/optionsSpec.js"></script>
+	  	<script src="spec/draggingSpec.js"></script>
+	  	<!--[if gt IE 9]><!-->
+	  	<script src="spec/touchDraggingSpec.js"></script>
+	  	<!--<![endif]-->
+	  	<script src="spec/callbacksSpec.js"></script>
+	  	<script src="spec/apiSpec.js"></script>
+	  	<script src="spec/resizingSpec.js"></script>
+	  	<script src="spec/eventsSpec.js"></script>
+	  	<script src="spec/browser-runner.js"></script>
+
+	  	<link href="demo/style/index.css" type="text/css" rel="stylesheet">
+	  	<link href="demo/style/jasmine-reporter.css" type="text/css" rel="stylesheet">
+	  	<link href="demo/style/demos.css" type="text/css" rel="stylesheet">
+	  	<script src="demo/script/index.js"></script>
+	  	<script src="demo/script/demos.js"></script>
+	  	<script type="text/javascript">
+			new Dragdealer('just-a-slider', {
+			  	animationCallback: function(x, y) {
+			    	$('#just-a-slider .value').text(Math.round(x * 100));
+			  	}
+			});
+	  	</script>
+
+	</head>
+
+	<body>
+		<input type="text" list="pokelist">
+		&nbsp;&nbsp;&nbsp;
+		<img src="img/noneicon.png" id="statusicon">
+		<datalist id="pokelist">
+		  	<option value="Bulbasaur 1">
+		  	<option value="Ivysaur 2">
+		  	<option value="Venasaur 3">
+		  	<option value="Charmander 4">
+		 	<option value="Charmeleon 5">
+		 	<option value="Charizard 6">
+		 	<option value="Squirtle 7">
+		  	<option value="Wartortle 8">
+		 	<option value="Blastoise 9">
+		 	<option value="Caterpie 10">
+		 	<option value="Metapod 11">
+		 	<option value="Butterfree 12">
+		 	<option value="Weedle 13">
+		 	<option value="Kakuna 14">
+		 	<option value="Beedrill 15">
+		 	<option value="Pidgey 16">
+		 	<option value="Pidgeotto 17">
+		 	<option value="Pidgeot 18">
+		 	<option value="Rattata 19">
+		 	<option value="Raticate 20">
+		 	<option value="Spearow 21">
+		 	<option value="Fearow 22">
+		 	<option value="Ekans 23">
+		 	<option value="Arbok 24">
+		 	<option value="Pikachu 25">
+		 	<option value="Raichu 26">
+		 	<option value="Sandshrew 27">
+		 	<option value="Sandslash 28">
+		 	<option value="Nidoran-Female 29">
+		 	<option value="Nidorina 30">
+		 	<option value="Nidoqueen 31">
+		 	<option value="Nidoran-Male 32">
+		 	<option value="Nidorino 33">
+		 	<option value="Nidoking 34">
+		 	<option value="Clefairy 35">
+		 	<option value="Clefable 36">
+		 	<option value="Vulpix 37">
+		 	<option value="Ninetails 38">
+		 	<option value="Jigglepuff 39">
+		 	<option value="Wigglytuff 40">
+		 	<option value="Zubat 41">
+		 	<option value="Golbat 42">
+		 	<option value="Oddish 43">
+		 	<option value="Gloom 44">
+		 	<option value="Vileplume 45">
+		 	<option value="Paras 46">
+		 	<option value="Parasect 47">
+		 	<option value="Venonat 48">
+		 	<option value="Venomoth 49">
+		 	<option value="Diglett 50">
+		 	<option value="Dugtrio 51">
+		 	<option value="Meowth 52">
+		 	<option value="Persian 53">
+		 	<option value="Psyduck 54">
+		 	<option value="Golduck 55">
+		 	<option value="Mankey 56">
+		 	<option value="Primape 57">
+		 	<option value="Growlithe 58">
+		 	<option value="Arcanine 59">
+		 	<option value="Poliwag 60">
+		 	<option value="Poliwhirl 61">
+		 	<option value="Poliwrath 62">
+		 	<option value="Abra 63">
+		 	<option value="Kadabra 64">
+		 	<option value="Alakazam 65">
+		 	<option value="Machop 66">
+		 	<option value="Machoke 67">
+		 	<option value="Machamp 68">
+		 	<option value="Bellsprout 69">
+		 	<option value="Weepinbell 70">
+		 	<option value="Victreebel 71">
+		 	<option value="Tentacool 72">
+		 	<option value="Tentacruel 73">
+		 	<option value="Geodude 74">
+		 	<option value="Graveler 75">
+		 	<option value="Golem 76">
+		 	<option value="Ponyta 77">
+		 	<option value="Rapidash 78">
+		 	<option value="Slowpoke 79">
+		 	<option value="Slowbro 80">
+		 	<option value="Magnemite 81">
+		 	<option value="Magneton 82">
+		 	<option value="Farfetch'd 83">
+		 	<option value="Doduo 84">
+		 	<option value="Dodrio 85">
+		 	<option value="Seel 86">
+		 	<option value="Dewgong 87">
+		 	<option value="Grimer 88">
+		 	<option value="Muk 89">
+		 	<option value="Shellder 90">
+		 	<option value="Cloyster 91">
+		 	<option value="Gastly 92">
+		 	<option value="Haunter 93">
+		 	<option value="Gengar 94">
+		 	<option value="Onix 95">
+		 	<option value="Drowzee 96">
+		 	<option value="Hypno 97">
+		 	<option value="Krabby 98">
+		 	<option value="Kingler 99">
+		 	<option value="Voltorb 100">
+		 	<option value="Electrode 101">
+		 	<option value="Exeggcute 102">
+		 	<option value="Exeggutor 103">
+		 	<option value="Cubone 104">
+		 	<option value="Marowak 105">
+		 	<option value="Hitmonlee 106">
+		 	<option value="Hitmonchan 107">
+		 	<option value="Lickitung 108">
+		 	<option value="Koffing 109">
+		 	<option value="Weezing 110">
+		 	<option value="Rhyhorn 111">
+		 	<option value="Rhydon 112">
+		 	<option value="Chansey 113">
+		 	<option value="Tangela 114">
+		 	<option value="Kangaskhan 115">
+		 	<option value="Horsea 116">
+		 	<option value="Seadra 117">
+		 	<option value="Goldeen 118">
+		 	<option value="Seaking 119">
+		 	<option value="Staryu 120">
+		 	<option value="Starmie 121">
+		 	<option value="Mr. Mime 122">
+		 	<option value="Scyther 123">
+		 	<option value="Jynx 124">
+		 	<option value="Electabuzz 125">
+		 	<option value="Magmar 126">
+		 	<option value="Pinsir 127">
+		 	<option value="Tauros 128">
+		 	<option value="Magikarp 129">
+		 	<option value="Gyarados 130">
+		 	<option value="Lapras 131">
+		 	<option value="Ditto 132">
+		 	<option value="Eevee 133">
+		 	<option value="Vaporeon 134">
+		 	<option value="Jolteon 135">
+		 	<option value="Flareon 136">
+		 	<option value="Porygon 137">
+		 	<option value="Omanyte 138">
+		 	<option value="Omastar 139">
+		 	<option value="Kabuto 140">
+		 	<option value="Kabutops 141">
+		 	<option value="Aerodactyl 142">
+		 	<option value="Snorlax 143">
+		 	<option value="Articuno 144">
+		 	<option value="Zapdos 145">
+		 	<option value="Moltres 146">
+		 	<option value="Dratini 147">
+		 	<option value="Dragonair 148">
+		 	<option value="Dragonite 149">
+		 	<option value="Mewtwo 150">
+		 	<option value="Mewtwo 151">
+		</datalist>
+		<form action="">
+			<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="nonvola" value="asleep">SLP<br>
+			<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+			<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+			<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+		</form>
+
+		<script type="text/javascript">
+		
+			var nonvola = "";
+			var infat = false;
+			var conf = false;
+			var curs = false;
+			var iconsrc = "/img/none.png";
+			function noneChange(){
+				document.getElementById("statusicon").src="img/noneicon.png"
+			}
+			function brnChange(){
+				document.getElementById("statusicon").src="img/burnicon.png"
+			}
+			function frzChange(){
+				document.getElementById("statusicon").src="img/freezeicon.png"
+			}
+			function parChange(){
+
+			}
+			function psnChange(){
+
+			}
+			function toxChange(){
+
+			}
+			function slpChange(){
+
+			}
+			function infatChange(){
+
+			}
+			function confChange(){
+
+			}
+			function cursChange(){
+
+			}
+			function removeElement(ele) {
+   				ele.parentNode.removeChild(ele);
+			}
+			function changingImg(){
+    			document.getElementById("statusicon").src="/img/.png"
+			}
+
+		</script>
+		<div id="just-a-slider" class="dragdealer">
+            <div class="handle red-bar">
+              	<span class="value"></span>%
+            </div>
+        </div>
+
+	</body>
+</html>
