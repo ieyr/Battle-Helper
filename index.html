@@ -33,26 +33,11 @@
 	  	<script src="spec/eventsSpec.js"></script>
 	  	<script src="spec/browser-runner.js"></script>
 
-	  	<link href="demo/style/index.css" type="text/css" rel="stylesheet">
-	  	<link href="demo/style/jasmine-reporter.css" type="text/css" rel="stylesheet">
-	  	<link href="demo/style/demos.css" type="text/css" rel="stylesheet">
 	  	<script src="demo/script/index.js"></script>
 	  	<script src="demo/script/demos.js"></script>
-	  	<script type="text/javascript">
-			new Dragdealer('just-a-slider', {
-			  	animationCallback: function(x, y) {
-			    	$('#just-a-slider .value').text(Math.round(x * 100));
-			  	}
-			});
-	  	</script>
 
 	</head>
-
-	<body>
-		<input type="text" list="pokelist">
-		&nbsp;&nbsp;&nbsp;
-		<img src="img/noneicon.png" id="statusicon">
-		<datalist id="pokelist">
+	<datalist id="pokelist">
 		  	<option value="Bulbasaur 1">
 		  	<option value="Ivysaur 2">
 		  	<option value="Venasaur 3">
@@ -204,20 +189,348 @@
 		 	<option value="Dragonite 149">
 		 	<option value="Mewtwo 150">
 		 	<option value="Mewtwo 151">
-		</datalist>
-		<form action="">
-			<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
-			<input type="radio" name="nonvola" value="asleep">SLP<br>
-			<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
-			<input type="checkbox" name="vola" value="confused">CONF&nbsp;
-			<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
-		</form>
+	</datalist>
+	<body>
+	<div id="megaright">
+		<div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider1" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider2" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider3" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider4" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider5" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider6" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	</div>
 
+
+	<div id="megaleft">
+		<div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider7" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider8" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider9" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider10" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider11" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	    &nbsp;&nbsp;
+	    <div id="pokebox">
+			<div id="textbox">
+				<input type="text" list="pokelist">
+			</div>
+			<div id="icon">
+				<img src="img/noneicon.png" id="statusicon">
+			</div>
+				
+				
+				<form action="">
+					<input type="radio" name="nonvola" value="none" onclick="noneChange();">NONE&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="burned" onclick="brnChange();">BRN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="frozen"onclick="frzChange();">FRZ&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="paralyzed">PAR&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="poisoned">PSN&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="badlypoisoned">TOX&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="nonvola" value="asleep">SLP<br>
+					<input type="checkbox" name="vola" value="infatuated">INFAT&nbsp;&nbsp;
+					<input type="checkbox" name="vola" value="confused">CONF&nbsp;
+					<input type="checkbox" name="vola" value="cursed">CURS&nbsp;&nbsp;&nbsp;
+				</form>
+			<div id="slider12" class="dragdealer">
+		        <div class="handle red-bar">
+		          	<span class="value"></span>%
+		        </div>
+		    </div>	
+	    </div>
+	</div>
 		<script type="text/javascript">
 		
 			var nonvola = "";
@@ -263,11 +576,7 @@
 			}
 
 		</script>
-		<div id="just-a-slider" class="dragdealer">
-            <div class="handle red-bar">
-              	<span class="value"></span>%
-            </div>
-        </div>
+		
 
 	</body>
 </html>

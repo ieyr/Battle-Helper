@@ -7,6 +7,78 @@ $(function() {
     }
   });
 
+  new Dragdealer('slider1', {
+    animationCallback: function(x, y) {
+      $('#slider1 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider2', {
+    animationCallback: function(x, y) {
+      $('#slider2 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider3', {
+    animationCallback: function(x, y) {
+      $('#slider3 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider4', {
+    animationCallback: function(x, y) {
+      $('#slider4 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider5', {
+    animationCallback: function(x, y) {
+      $('#slider5 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider6', {
+    animationCallback: function(x, y) {
+      $('#slider6 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider7', {
+    animationCallback: function(x, y) {
+      $('#slider7 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider8', {
+    animationCallback: function(x, y) {
+      $('#slider8 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider9', {
+    animationCallback: function(x, y) {
+      $('#slider9 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider10', {
+    animationCallback: function(x, y) {
+      $('#slider10 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider11', {
+    animationCallback: function(x, y) {
+      $('#slider11 .value').text(Math.round(x * 100));
+    }
+  });
+
+  new Dragdealer('slider12', {
+    animationCallback: function(x, y) {
+      $('#slider12 .value').text(Math.round(x * 100));
+    }
+  });
+
   var availHeight = $('.content-body').outerHeight() -
                     $('.content-mask').outerHeight();
   new Dragdealer('content-scroller', {

@@ -1,1 +1,252 @@
-input { font-size: 50px; }
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+#textbox { 
+
+	position: absolute;
+	width: 640px;
+	z-index: 1;
+}
+#icon {
+	left: 540px;
+	z-index: 1;
+	position: relative;
+}
+input {
+	font-size: 20px;
+}
+img {
+	top:0px;
+	right:0px;
+	position:relative;
+}
+
+#megaright {
+	top:0px;
+	right:0px;
+	position: absolute;
+	height: 100%;
+	width: 640px;
+	padding-right: 10px
+}
+#megaleft {
+	top:0px;
+	left: 0px;
+	position: absolute;
+	height: 100%;
+	width: 640px;
+	padding-left: 10px;
+}
+
+#pokebox {
+	top:0px;
+	left:0px;
+	height: 14%;
+	width: 640px;
+	position: relative;
+	font-family:'Roboto Condensed';
+	clear:both;
+	border: 2px solid;
+}
+
+#slider1 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider1 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider1 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider2 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider2 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider2 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider3 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider3 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider3 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider4 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider4 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider4 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider5 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider5 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider5 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider6 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider6 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider6 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider7 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider7 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider7 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider8 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider8 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider8 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider9 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider9 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider9 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider10 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider10 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider10 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider11 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider11 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider11 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+#slider12 {
+  background-color: #44c46f;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+  #slider12 .handle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #173505;
+  }
+    #slider12 .value {
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-weight: bold;
+    }
