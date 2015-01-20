@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+html{
+	background: #1e1e1e;
+}
 #textbox { 
 
 	position: absolute;
@@ -7,12 +10,24 @@
 	width: 640px;
 	z-index: 1;
 }
+#textbox input { 
+    background: #1A1A1A; 
+    position: absolute;
+    height:30px; 
+    border-radius: 2em; 
+    border: none; 
+    color: #A2A2A2; 
+    padding-left: 1.5em;
+    padding-top: 2px; 
+    outline: none; 
+    z-index: 1;
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%) 
+} 
 #icon {
 	left: 540px;
 	z-index: 1;
 	position: relative;
 	padding-top: 2px;
-	padding-left: 5px;
 }
 input {
 	font-size: 20px;
@@ -29,7 +44,17 @@ img {
 	position: absolute;
 	height: 100%;
 	width: 640px;
-	padding-right: 10px
+	padding-right: 10px;
+	vertical-align: middle;
+	
+}
+#megaright #pokebox {
+
+	background:#bc8db1;
+}
+
+#megaleft #pokebox {
+	background:#8bacbd;
 }
 #megaleft {
 	top:0px;
@@ -38,6 +63,7 @@ img {
 	height: 100%;
 	width: 640px;
 	padding-left: 10px;
+	vertical-align: middle;
 }
 
 #pokebox {
@@ -47,10 +73,17 @@ img {
 	width: 640px;
 	position: relative;
 	font-family:'Roboto Condensed';
+	color:white;
 	clear:both;
 	border: 2px solid;
 }
 
+footer{
+  color: #8bacbd;
+  text-align: center;
+  background-color: #1e1e1e;
+  font-family:'Roboto Condensed';
+}
 #slider1 {
   background-color: #44c46f;
   height: 30px;
